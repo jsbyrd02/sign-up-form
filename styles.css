@@ -4,7 +4,11 @@
 }
 
 :root {
-  --text: rgb(0, 0, 0);
+  --normal-text: rgb(0, 0, 0);
+  --input-text: rgb(185, 185, 185);
+  --background-1: rgb(245, 243, 243);
+  --background-2: rgb(252, 252, 252);
+  --button-color: #596D48
 }
 
 * {
@@ -56,6 +60,84 @@ body {
 /* Right Side */
 
 .right {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
   height: 100vh;
   width: 60vw;
+  background-color: var(--background-1);
+  font-weight: 600;
+}
+
+.right-top {
+  color: black;
+  margin: 0vh 3vh 0vh 3vh;
+}
+
+.p1 {
+  margin-top: 1vh;
+}
+
+.p2 {
+  margin: 3vh 0vh 5vh 0vh;
+}
+
+.form-title {
+  font-size: 1rem;
+  width: 100%;
+}
+
+.right-middle {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: var(--background-2);
+  gap: 1rem;
+  padding: 2vh 3vh 3vh 3vh;
+}
+
+.input {
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: 0.7rem;
+}
+
+input {
+  width: 15rem;
+  outline: none;
+  border-style: solid;
+  border-radius: 0.25rem;
+  border-width: 0.01rem;
+  padding: 0.2rem;
+}
+
+input:focus {
+  border-color: rgb(67, 167, 255);
+}
+
+label {
+  color: rgb(50, 50, 50);
+}
+
+button {
+  outline: none;
+  border: none;
+  border-radius: 0.3rem;
+  border-width: 0.01rem;
+  padding: 0.2rem;
+  background-color: var(--button-color);
+  color: white;
+  padding: 1vh 3vh 1vh 3vh;
+  margin: 3vh 0vh 2vh 3vh;
+}
+
+.right-bottom {
+  color: black;
+  font-weight: 400;
+  margin-left: 3vh;
+}
+
+p>a {
+  text-decoration: none;
+  color: var(--button-color);
+  font-weight: bold;
 }
